@@ -36,3 +36,15 @@ function placeOrder() {
         <img src="https://source.unsplash.com/200x200/?smoothie" alt="Smoothie">
     `;
 }
+// Function to randomly select a base and fruits, then place the order (surprice me)
+function randomSmoothie() {
+    const bases = ["Milk", "Almond Milk", "Yogurt"];
+    const randomBase = bases[Math.floor(Math.random() * bases.length)];
+    document.getElementById('base').value = randomBase;
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        cb.checked = Math.random() > 0.5;
+    });
+
+    placeOrder();
+}
