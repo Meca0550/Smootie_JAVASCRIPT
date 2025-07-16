@@ -33,7 +33,7 @@ function placeOrder() {
     document.getElementById('output').innerHTML = `
         <p>${smoothie.getDescription()}</p>
         <p>Total Price: $${smoothie.getPrice()}</p>
-        <img src = "/img/Smoothie-1.jpg" alt="Smoothie Image" style="width: 200px; height: 200px;">
+        <img src = "img/Smoothie-1.jpg" alt="Smoothie Image" style="width: 200px; height: 200px;">
     `;
 }
 // Function to randomly select a base and fruits, then place the order (surprice me)
